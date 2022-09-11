@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Кнопка"/>
                                 <connections>
-                                    <action selector="buttonCounterClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkM-VE-nBL"/>
+                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXk-sR-bum"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счётчика: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci8-8R-kGW">
@@ -37,8 +37,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="buttonCounter" destination="gPM-1f-q8h" id="Rue-HQ-YcT"/>
-                        <outlet property="textCounter" destination="ci8-8R-kGW" id="3vn-pR-x1t"/>
+                        <outlet property="checkTextField" destination="ci8-8R-kGW" id="6wX-Bo-ztB"/>
+                        <outlet property="counterButton" destination="gPM-1f-q8h" id="2sQ-xg-pjN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

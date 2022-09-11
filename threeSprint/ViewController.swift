@@ -9,26 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var click: Bool = false
-    @IBOutlet weak var textCounter: UILabel!
-    @IBOutlet weak var buttonCounter: UIButton!
-    var check: Int = 0
+    @IBOutlet public weak var checkTextField: UILabel!
+    @IBOutlet public weak var counterButton: UIButton!
+    private var counter: Int = 0
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        counterButton.tintColor = .green
     }
     
-    @IBAction func buttonCounterClick(_ sender: Any) {
-        
-        if click{
-            check += 1
-            textCounter.text = "Значения счётчика: \(check)"
-        } else {
-            check += 1
-            textCounter.text = "Значения счётчика: \(check)"
-        }
-        
-        click.toggle()
+    @IBAction private func checkButton(_ sender: Any) {
+        counter += 1
+        checkTextField.text = "Значение счётчика: \(counter)"
     }
     
 }
